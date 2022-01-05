@@ -103,6 +103,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 import ComponentRenderer from "ComponentRenderer.js";
 import MainLandingPage from "demos/RestaurantLandingPage.js";
+import OldLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -123,6 +124,9 @@ export default function App() {
         </Route>
         <Route path="/thank-you">
           <ThankYouPage />
+        </Route>
+        <Route path="/oldLandingPage">
+          <OldLandingPage />
         </Route>
         <Route path="/">
           <MainLandingPage />
